@@ -1,0 +1,13 @@
+body {
+    background-image: url("D:\Websites\MinimizeFoodWasteApp\Minimize-Food-Waste-Application\Assets\backgroundImages\background image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#loginContainer {
+    align-items: center;
+    background-color: aquamarine;
+    justify-content: center;
+    padding: 20%;
+}
