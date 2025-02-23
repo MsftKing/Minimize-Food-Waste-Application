@@ -25,7 +25,7 @@ function removeItem() {
 }
 
 function displayInventory() {
-    const inventoryList = document.querySelector("#pantryInventory ul");
+    const inventoryList = document.getElementById("inventoryItems");
     inventoryList.innerHTML = '';
 
     inventory.forEach(item => {
