@@ -1,3 +1,6 @@
+
+
+
 let inventory = [];
 
 function addItem() {
@@ -38,4 +41,8 @@ function displayInventory() {
 function formFilled(){
     const username = document.getElementById("username");
     const password = document.getElementById("password");
+
+    if (!username && !password) {
+        alert("Please try again. If you are having issues logging in, click Reset Password link")
+    };
 }
