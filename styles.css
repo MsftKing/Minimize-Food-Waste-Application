@@ -1,13 +1,33 @@
-body {
-    background-image: url("D:\Websites\MinimizeFoodWasteApp\Minimize-Food-Waste-Application\Assets\backgroundImages\background image.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+:root {
+    --primary-color-dark: #416165;
+    --primary-color-light: #69D1C5;
+    --primary-neutral: #D8D4D5;
 }
 
-#loginContainer {
+* {
+    background-color: var(--primary-color-dark);
+}
+
+div#loginContainer {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: aquamarine;
+    background-color: var(--primary-color-light);
+    border-radius: 5vw;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 20%;
+    margin: 5vh;
+    padding: 10px;
+
+}
+
+p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-neutral);
 }

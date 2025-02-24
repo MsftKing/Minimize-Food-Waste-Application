@@ -34,3 +34,8 @@ function displayInventory() {
         inventoryList.appendChild(listItem);
     });
 }
+
+function formFilled(){
+    const username = document.getElementById("username");
+    const password = document.getElementById("password");
+}
