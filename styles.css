@@ -2,6 +2,7 @@
     --primary-color-dark: #416165;
     --primary-color-light: #69D1C5;
     --primary-neutral: #D8D4D5;
+    --black: #00000;
 }
 
 * {
@@ -12,8 +13,13 @@ div#loginContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--primary-color-light);
+    margin-bottom: 50vw;
+    margin-top: 50vw;
+    margin-left: 10vh;
+    margin-right: 10vh;
     border-radius: 5vw;
+    position: sticky;
+    background-color: var(--primary-color-light);
     
 }
 
@@ -23,11 +29,19 @@ form {
     justify-content: center;
     margin: 5vh;
     padding: 10px;
+    background-color: var(--primary-color-light);
 
 }
 
-p{
+p, a{
     font-size: 16px;
     font-weight: 500;
-    color: var(--primary-neutral);
+    color: var(--black);
+    background-color: var(--primary-color-light);
+}
+
+input {
+    border-radius: 5vh;
+    margin: 1rem;
+    padding: 1rem;     
 }
