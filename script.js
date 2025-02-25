@@ -1,50 +1,8 @@
+const menuOpenButton = document.querySelector("#menuOpenButton");
 
-/* Adding items to the iventory for pantry */
 
-let inventory = [];
+    //Toggle Mobile menu
 
-function addItem() {
-    const itemName = document.getElementById("itemName").value;
-    const itemQuantity = parseInt(document.getElementById("inputQuantity").value);
-
-    if (itemName && itemQuantity > 0) {
-        const item = { name: itemName, quantity: itemQuantity };
-        inventory.push(item);
-        displayInventory();
-    } else {
-        alert("Please enter a valid item name and quantity");
-    }
-}
-
-function removeItem() {
-    const itemName = document.getElementById("itemName").value;
-
-    if (itemName) {
-        inventory = inventory.filter(item => item.name !== itemName);
-        displayInventory();
-    } else {
-        alert("Please enter a valid item name to remove");
-    }
-}
-
-function displayInventory() {
-    const inventoryList = document.getElementById("inventoryItems");
-    inventoryList.innerHTML = '';
-
-    inventory.forEach(item => {
-        const listItem = document.createElement('li');
-        listItem.textContent = `${item.name}: ${item.quantity}`;
-        inventoryList.appendChild(listItem);
-    });
-}
-
-function formFilled(){
-    const username = document.getElementById("username");
-    const password = document.getElementById("password");
-
-    if (!username && !password) {
-        alert("Please try again. If you are having issues logging in, click Reset Password link")
-    };
-}
-
-/*Log in */
+menuOpenButton.addEventListener("onClick", () => {
+    document.body.classList.toggle("showMobileMenu")
+});

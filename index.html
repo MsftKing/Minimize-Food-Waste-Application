@@ -4,37 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoMeal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!--Top bar for navigation>
-    <div id="topBar">
-        
-            <h3><a href="index.html">Home</a></h3>
-            <h3><a href="">Recipes</a></h3>
-            <h3><a href="">Grocery List</a></h3>
-            <h3><a href="login.html">Log Out</a></h3>
-        
-    </div>
-
-    Pantry Inventory and Adding System-->
-<!-- <h1 id="pantryList">Pantry List</h1>
-    <div id="PantryItems">
-        <input id="itemName" type="text" placeholder="Chicken Thighs" name="Pantry" />
-        <input id="inputQuantity" type="number" placeholder="0" name="itemQuantity" />
-        <span id="addButton">
-            <button onclick="addItem()">Add</button>
-        </span>
-        <span id="removeButton">
-            <button onclick="removeItem()">Remove</button>
-        </span>
-    </div>
-    <div>
-        <h2 id="pantryInventory">Pantry Inventory</h2>
-        <ul id="inventoryItems"></ul>
-    </div>
-    <script src="script.js"></script> -->
-
     <!--Header and NavBar-->
 <header>
     <nav class="navbar sectionContent">
@@ -42,6 +15,8 @@
             <h2 class="logoText">EcoMeal</h2>
         </a>
         <ul class="navMenu">
+            <button id="menuCloseButton" class="fas fa-times"></button>
+
             <li class="navItem">
                 <a href="#" class="navLink">Home</a>
             </li>
@@ -58,9 +33,26 @@
                 <a href="#" class="navLink">Testimonials</a>
             </li>
         </ul>
+        <button id="menuOpenButton" class="fas fa-bars"></button>
     </nav>
 </header>
-
+<main>
+    <!--Hero Section-->
+    <section class="heroSection">
+        <div class="sectionContent">
+            <div class="heroDetails">
+                <h2 class="title">EcoMeal</h2>
+                <h3 class="subtitle">Reduce Waste, Maximize Taste!</h3>
+                <p class="description">Eco Meal is an app that helps you reduce food waste by tracking what’s in your fridge. Get personalized recipes based on your available ingredients, and make the most of what you have while minimizing waste!</p>
+                <div class="buttons">
+                    <a href="#" class="button shopping">Shop Now</a>
+                    <a href="#" class="button recipes">Recipes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
 </html>
