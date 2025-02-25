@@ -1,5 +1,5 @@
 
-
+/* Adding items to the iventory for pantry */
 
 let inventory = [];
 
@@ -46,3 +46,5 @@ function formFilled(){
         alert("Please try again. If you are having issues logging in, click Reset Password link")
     };
 }
+
+/*Log in */
