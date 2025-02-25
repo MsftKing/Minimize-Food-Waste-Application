@@ -228,6 +228,17 @@ header .navbar {
         background-color: var(--white-color);
         transition: left 0.2s ease;
     }
+    body.showMobileMenu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0,0,0,0.2);
+    }
+
 
     body.showMobileMenu .navbar .navMenu {
         left: 0px;
@@ -240,4 +251,25 @@ header .navbar {
         font-size: var(--font-size-l);
     }
     
+
+    .heroSection .sectionContent {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+    }
+
+.heroSection .heroDetails :is(.subtitle, .description){
+    max-width: 100%;
+}
+
+.heroSection .heroDetails .buttons {
+    justify-content: center;
+}
+
+    .heroSection .heroImageWrapper {
+        max-width: 270px;
+        margin-right: 0;
+    }
 }
