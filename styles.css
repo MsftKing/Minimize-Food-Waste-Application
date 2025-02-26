@@ -61,10 +61,6 @@ button {
     background: none;
 }
 
-img {
-    width: 100%;
-}
-
 .sectionContent{
     margin: 0 auto;
     padding: 0 18px;
@@ -72,6 +68,8 @@ img {
 }
 
 .sectionTitle {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 60px 0 100px;
     text-transform: uppercase;
@@ -82,7 +80,7 @@ img {
     content: "";
     width: 80px;
     height: 5px;
-    display: block; 
+    display: flex; 
     margin: 10px auto 0;
     border-radius: var(--border-radius-s);
     background: var(--primary-color);
@@ -202,15 +200,20 @@ header .navbar {
 /*About Section*/
 
 .aboutSection {
-    padding: 120px 0px;
+    padding: 120px 25px;
     background-color: var(--dark-tan-color);
 }
 
 .aboutSection .sectionContent {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+}
+
+
+.aboutSection .aboutImageWrapper{
+    width: 300px;
+    height: 300px;
 }
 
 .aboutSection .aboutImageWrapper .aboutImage {
@@ -218,15 +221,16 @@ header .navbar {
     height: 300px;
     object-fit: cover;
     border-radius: var(--border-radius-circle);
+    align-items: center;
 }
 
 .aboutSection .aboutDetails .sectionTitle {
     padding: 0;
-    justify-content: center;
+    align-items: center;
 }
 
 .aboutSection .aboutDetails {
-    max-width: 50%;
+    max-width: 100%;
 }
 
 
@@ -251,6 +255,27 @@ header .navbar {
 
 .aboutSection .aboutDetails .socialLinkList .socialLink:hover {
     color: var(--accent-color);
+}
+ /* Recipes */
+
+
+.recipeSection {
+    padding: 50px 0 100px;
+    background: var(--primary-color);
+}
+
+.recipeSection .sectionContent {
+    padding: 35px;
+    text-align: center;
+    align-items: center;
+}
+
+.recipeSection .sectionContent .recipeList .recipeItem .recipeImage {
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
 }
 
 
